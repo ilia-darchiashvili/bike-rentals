@@ -1,0 +1,51 @@
+.bike-form {
+  position: relative;
+  list-style: none;
+  margin: 0 auto;
+  padding: 1rem;
+  width: 90%;
+  max-width: 40rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  border-radius: 6px;
+  background: white;
+}
+
+.bike-form_reservations {
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.bike-form_dates-wrapper {
+  margin-bottom: 5px;
+
+}
+
+.bike-form_filter-date {
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  .react-datetime-picker__inputGroup__hour,
+  .react-datetime-picker__inputGroup__minute,
+  .react-datetime-picker__inputGroup__amPm,
+  .react-datetime-picker__inputGroup__divider,
+  .react-datetime-picker__inputGroup__leadingZero {
+    display: none;
+  }
+}
+
+.bike-form_filter-wrapper {
+  margin-bottom: 10px;
+}
+
+.bike-form_filter-label {
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+#isAvailable {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}

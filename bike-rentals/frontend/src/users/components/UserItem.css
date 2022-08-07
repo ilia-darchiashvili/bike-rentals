@@ -1,0 +1,88 @@
+.user-item {
+  margin: 1rem;
+  width: calc(45% - 2rem);
+  min-width: 17.5rem;
+}
+
+/* .user-item a {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  background: #292929;
+} */
+
+/* .user-item a:hover,
+.user-item a:active {
+  background: #ffd900;
+} */
+
+.user-item__content {
+  padding: 0;
+  /* display: flex; */
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  padding: 1rem;
+  color: white;
+  background: #292929;
+}
+
+.user-item__image {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+}
+
+.user-item__info {
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.user-item__info h2 {
+  font-size: 1.5rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: normal;
+  color: #ffd900;
+}
+
+.user-item__info h3 {
+  font-size: 1rem;
+  margin: 0 0 0.5rem 0;
+  font-weight: normal;
+  color: #23cebd;
+}
+
+/* .user-item:hover h2,
+.user-item:active h2,
+.user-item:hover h3,
+.user-item:active h3 {
+  color: #292929;
+} */
+
+.user-item__info h3 {
+  margin: 0;
+}
+.user-item__bikes {
+  margin-bottom: 15px;
+}
+
+.user-item__bike {
+  margin-bottom: 2px;
+}
+
+.user-item__actions {
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #ccc;
+}
+
+.user-item__actions button,
+.user-item__actions a {
+  margin: 0.5rem;
+}
