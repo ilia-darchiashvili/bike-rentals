@@ -145,7 +145,7 @@ const BikeItem = props => {
               <Button inverse onClick={openMapHandler}>
                 VIEW ON MAP
               </Button>
-              <Button to={`/bikes/${props.id}`}>{props.availableBikes ? 'RESERVE' : 'EDIT'}</Button>
+              <Button to={`/bikes/${props.id}`}>{props.availableBikes ? 'RESERVE/RATE' : 'EDIT'}</Button>
               {!props.availableBikes && <Button danger onClick={showDeleteWarningHandler}>DELETE</Button>}
             </div>
           }

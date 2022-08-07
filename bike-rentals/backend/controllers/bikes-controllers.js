@@ -161,18 +161,6 @@ const deleteBike = async (req, res, next) => {
 
   const imagePath = bike.image;
 
-  // try {
-  //   if (!!bike && !!bike.reservations && bike.reservations.length > 0) {
-  //     bike.reservations.forEach(reservation => cancelReserveBike({...req, body: {reservationId: reservation.id, userId: reservation.userId}}, res, next));
-  //   }
-  // } catch (err) {
-  //   const error = new HttpError(
-  //     'Could not cancel bike reservations.',
-  //     500
-  //   );
-  //   return next(error);
-  // }
-
   try {
     await bike.remove();
   } catch (err) {

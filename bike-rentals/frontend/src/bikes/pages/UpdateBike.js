@@ -8,9 +8,7 @@ import Card from '../../shared/components/UIElements/Card';
 import LoadingSpinner from '../../shared/components/UIElements/LoadingSpinner';
 import ErrorModal from '../../shared/components/UIElements/ErrorModal';
 import ImageUpload from '../../shared/components/FormElements/ImageUpload';
-import {
-  VALIDATOR_REQUIRE
-} from '../../shared/util/validators';
+import { VALIDATOR_REQUIRE } from '../../shared/util/validators';
 import { useForm } from '../../shared/hooks/form-hook';
 import { useHttpClient } from '../../shared/hooks/http-hook';
 import { AuthContext } from '../../shared/context/auth-context';
@@ -262,7 +260,6 @@ const UpdateBike = () => {
           <div>
             {!auth.isManager && !!reservations && !!reservations.length && reservations.filter(reservation => reservation.userId === auth.userId).map((userReservation, index) => (
               <div key={index + 1} className="bike-form_reservations">
-                {/* <span>{(userReservation.from).toString()} - {(userReservation.to).toString()}</span> */}
                 <div className="bike-form_dates-wrapper">
                   <DateTimePicker disabled={true} value={new Date(new Date(userReservation.from).getTime() + new Date(userReservation.from).getTimezoneOffset()*60*1000)} />
                     - 

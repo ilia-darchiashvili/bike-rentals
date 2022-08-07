@@ -88,21 +88,6 @@ const UserItem = props => {
             <h2>{props.name}</h2>
             <h3>{props.isManager ? "Manager" : "User"}</h3>
           </div>
-          {/* {props.reservor && !!props.reservedBikes && !!props.reservedBikes.length && props.reservedBikes.map((bike, index)=> (
-            <div key={index + 1} className="user-item__bikes">
-              <div className="user-item__bike">bike: {bike.model}</div>
-              <div>
-                <div>period(s):</div>
-                <div>
-                  {!!bike.reservations && !!bike.reservations.length && bike.reservations.map((reservation, index) => (
-                    <React.Fragment key={index + 1}>
-                      {reservation.userId === props.id && <div>{reservation.from.substr(0, reservation.from.length - 8)} - {reservation.to.substr(0, reservation.to.length - 8)}</div>}
-                    </React.Fragment>
-                  ))}
-                </div>
-              </div>
-            </div>
-          ))} */}
           {props.reservor && !!groupedReservations && !!groupedReservations.length && groupedReservations.map((reservation, index)=> (
             <div key={index + 1} className="user-item__bikes">
               <div className="user-item__bike">bike: {reservation.bike}</div>
